@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "aside main main"
+                         "footer footer footer";
+    grid-template-rows: auto 80vh auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+}
+
+header {
+    grid-area: header;
+    background: blue;
+    padding: 1.5rem;
+}
+aside {
+    grid-area: aside;
+    background: purple;
+}
+main {
+    grid-area: main;
+    background: yellow
+}
+footer { 
+    grid-area: footer;
+    background: green;
+    padding: 1.5rem;
+}
